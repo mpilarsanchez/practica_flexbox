@@ -13,58 +13,8 @@ div.container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-div.card {
-  width: 40%;
-  background-color: white;
-}
-
-div.card-image img {
-  border-radius: 50%;
-  width: 30%;
-}
-
-ul.social-media li {
-  display: inline;
-}
-
-ul.social-media li a {
-  text-decoration-style: none;
-}
-
-ul.social-media li a span {
-  border-radius: 50%;
-  color: #508fb8;
-}
-
-div.card-data {
-  font-family: 'Raleway', sans-serif;
-}
-
-div.card-data h2 {}
-
-div.card-data p {}
-
-div.card-data a {
-  background-color: #c7c7c7;
-  color: white;
-  /*display: block;*/
-}
-
-
-
-
-/* agregado*/
-div.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: -webkit-fill-available;
 }
 
 div.card {
@@ -83,11 +33,6 @@ div.card-image img {
   width: 100%;
 }
 
-div.card-data a {
-  background-color: #c7c7c7;
-  color: white;
-}
-
 ul.social-media {
   display: flex;
   flex-wrap: wrap;
@@ -96,56 +41,67 @@ ul.social-media {
   align-items: center;
 }
 
+ul.social-media li {
+  display: inline;
+}
+
+ul.social-media li a {
+  text-decoration-style: none;
+}
+
+ul.social-media li a span {
+  border-radius: 50%;
+  color: #508fb8;
+}
+
 div.card-data {
   font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   padding-left: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 div.card-data a {
+  background-color: #c7c7c7;
+  color: white;
   text-decoration: none;
   width: 20%;
   text-align: center;
   padding: 5px;
 }
 
+/* --------- */
 /* MEDIA QUERY*/
 /* iPads ... (portrait) */
-@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+@media only screen and (min-width : 376px) and (max-width : 700px) {
   div.card {
     background-color: white;
     display: block;
     flex-wrap: initial;
     flex-direction: row;
-    align-items: left;
     width: 46%;
     justify-content: space-around;
   }
 
   div.card-data a {
     text-decoration: none;
-    width: 30%;
+    font-size: 0.8em;
+    width: 37%;
     text-align: center;
     padding: 5px;
   }
 }
 
-/*414px iphone6/7/8 plus*/
-@media only screen and (max-width : 414px) {
+/*414px iphone6/7/8 plus* NO SE VEEEE***/
+@media only screen and (max-width : 375px) {
   div.card {
     background-color: white;
     display: block;
-    flex-wrap: initial;
     flex-direction: row;
     align-items: left;
     width: 90%;
     justify-content: space-around;
-  }
-
-  div.card-image {
-  /*  width: 80%;*/
   }
 
   div.card-data a {
