@@ -54,6 +54,9 @@ div.card-data a {
   /*display: block;*/
 }
 
+
+
+
 /* agregado*/
 div.container {
   display: flex;
@@ -142,7 +145,7 @@ div.card-data a {
   }
 
   div.card-image {
-    width: 80%;
+  /*  width: 80%;*/
   }
 
   div.card-data a {
